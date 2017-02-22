@@ -7,14 +7,85 @@ import classes.Person;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("EXERCISES \n\n \t *** EASY *** \n");
+        System.out.println("**First 10 positive integers \n");
 
-        int[] fEvenNumbers = new int[5];
+        System.out.println("__USING WHILE LOOP");
+
+        int firstTen1 = 1;
+        while (firstTen1 <= 10) {
+            System.out.print("[" + firstTen1 + "]");
+            firstTen1++;
+        }
+
+        System.out.println("\n__USING FOR LOOP");
+
+        int firstTen2;
+        for (firstTen2 = 1; firstTen2 <= 10; firstTen2++) {
+            System.out.print("[" + firstTen2 + "]");
+        }
+
+        System.out.println("\n__USING DO-WHILE LOOP");
+
+        int firstTen3 = 1;
+        do {
+            System.out.print("[" + firstTen3 + "]");
+            firstTen3++;
+        } while (firstTen3 <= 10);
+
+
+        System.out.println("\n\n**Sum of first n positive integers");
+
+        System.out.print("(");
+        int[] firstPositive = {1, 2, 3, 4, 5, 6};
+
+        for (int f = 1;f<6;f++){
+            System.out.print(f+"+");
+        }
+        System.out.print("6)");
+
+        int sum = 0;
+        for (int n = 0; n < firstPositive.length; n++) {
+            sum += firstPositive[n];
+        }
+        System.out.println("\nSUM is: "+sum+"\n");
+
+        System.out.println("\t *** AVERAGE *** \n");
+        System.out.println("**Factorial of n");
+
+        System.out.print("(");
+        int[] factorial = {7, 6, 5, 4, 3, 2, 1};
+
+        for (int f2 = 7;f2>1;f2--){
+            System.out.print(f2+"*");
+        }
+        System.out.print("1)");
+
+
+        int factor = 1;
+        for (int x = 0; x < factorial.length; x++) {
+            factor *= factorial[x];
+        }
+        System.out.println("\nFACTOR is: "+factor+"\n");
+
+        int evenLimit = 10;
+        for (int e = 0;e<=10;e++){
+            if ( e * 2 == 0) {
+                System.out.print(evenLimit);
+            }
+        }
+
+    }
+}
 
 
 
 
 
-        int[] myFactor = {7,6,5,4,3,2,1};
+
+
+
+/*        int[] myFactor = {7,6,5,4,3,2,1};
         int factor = 1;
         int f;
         for (f = 0; f < myFactor.length; f++) {
@@ -22,8 +93,6 @@ public class Main {
         }
         System.out.print("Factorial of "+ myFactor[0] + " is = "+factor + "\n");
 
-
-        System.out.print("*** AVERAGE Exercise ***\n");
 
         int[] mySum = {1,2,3,4,5,6};
         int sum = 0;
@@ -56,13 +125,9 @@ public class Main {
         do {
             System.out.print("[" + x +"]" );
             x++;
-        } while(x <= 10);
+        } while(x <= 10);*/
 
-    }
-}
-
-
-
+//
         /*Employee firstEmployee = new Employee();
 
         firstEmployee.setUsername("virgil17");
@@ -210,6 +275,4 @@ public class Main {
 
         System.out.println("Hello World");
 
-    }
-}
         */
